@@ -1,38 +1,37 @@
 
-## To do Add style sheet
- @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
-  1 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-  2
-  3 body {
-  4   min-height: 95vh;
-  5   max-width: 960px;
-  6   border: 1px solid #ccc;
-  7   box-shadow: 5px 5px 5px #ccc;
-  8   margin: 0 auto;
-  9   display: grid;
- 10   grid-gap: 2em;
- 11   padding: 1em;
- 12   grid-template-rows: 5em auto 2em;
- 13   border-radius: 5px;
- 14   background: #fff;
- 15 }
- 16 .main-header{
- 17   grid-row: 1;
- 18   display: flex;
- 19   align-items: bottom;
- 20   justify-content: space-between;
- 21   border-bottom: 2px #a3aacc solid;
- 22   color: rgba(0,0,0,0.75);
- 23 }
- 24 .navbar{
- 25   display: flex;
- 26   justify-content: space-around;
- 27 }
- 28 a {
- 29   transition: 0.5s;
- 30   text-decoration: none;
- 31 }
- 32 a:hover{
- 33   border-bottom: 1px solid #a3aacc;
- 34 }
- 35 .navbar a{
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+body {
+  min-height: 95vh;
+  max-width: 960px;
+  border: 1px solid #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2em;
+  padding: 1em;
+  grid-template-rows: 5em auto 2em;
+  border-radius: 5px;
+  background: #fff;
+}
+.main-header{
+  grid-row: 1;
+  display: flex;
+  align-items: bottom;
+  justify-content: space-between;
+  border-bottom: 2px #a3aacc solid;
+  color: rgba(0,0,0,0.75);
+}
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+a {
+  transition: 0.5s;
+  text-decoration: none;
+}
+a:hover{
+  border-bottom: 1px solid #a3aacc;
+}
+.navbar a{
