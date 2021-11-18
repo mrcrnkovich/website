@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
 body {
   min-height: 95vh;
   max-width: 960px;
@@ -35,3 +38,96 @@ a:hover{
   border-bottom: 1px solid #a3aacc;
 }
 .navbar a{
+  color: rgba(0,0,0,0.65);
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight:400;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+}
+.navbar ul li ul{
+  display: none;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+.navbar ul li:hover > ul, .navbar ul li ul:hover{
+  display: block;
+  opacity: 1;
+  visibility: visible;  
+}
+ul {
+  list-style: none;
+}
+li {
+  position: relative;
+}
+.content{
+  grid-row: 2;
+  columns: 1;
+  overflow: auto;
+}
+h5 {
+  color: a3aacc;
+}
+h1, h2, h3, table{
+  column-span: all;
+}
+p, li, ul {
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  font-weight:400;
+}
+p {
+  text-align: justify;
+}
+li, ul {
+  margin-top: 0.5em;
+}
+h1, h2, h3, h4, h5 {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight:500;
+}
+h1 {
+  color: #444444;
+}
+pre {
+  padding: 1em;
+  background: #ccc;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+table {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 75%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+thead {
+  background: black;
+}
+th, td{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight:300;
+  padding: 1em;
+  transition: 500ms;
+}
+th {
+  color: #fff;
+}
+td:hover{
+  box-shadow: 5px 5px 5px #ccc;
+}
+.even {
+  background: #ece6f2;
+}
