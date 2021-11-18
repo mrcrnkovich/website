@@ -10,14 +10,13 @@ def base_route():
 
 @bp.route("/about")
 def about_route():
-    return "Things I know - To Do"
-
+    return render_template("pages/about.html")
 
 @bp.route("/projects")
 def project_route():
-    return "List of Projects - To Do"
+    return render_template("pages/projects.html")
 
 
 @bp.route("/contact")
 def contact_route():
-    return "Contact Me - To Do"
+    return render_template("pages/contact.html") 

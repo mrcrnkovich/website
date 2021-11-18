@@ -7,16 +7,20 @@
     --midblue: #5085A5;
     --lightblue: #8FC1E3;
     --white: #F7F9FB;
+    --grey: #a3aacc;
+    --black: rgba(0,0,0,0.65);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
+    background: var(--white);
+    font-color: var(--black);
 }
 
 body {
   min-height: 95vh;
   max-width: 960px;
-  border: 1px solid #ccc;
-  box-shadow: 5px 5px 5px #ccc;
+  /*border: 1px solid var(--grey);
+  box-shadow: 5px 5px 5px #ccc; */
   margin: 0 auto;
   display: grid;
   grid-gap: 2em;
@@ -25,45 +29,61 @@ body {
   border-radius: 5px;
   background: #fff;
 }
-.main-header{
+
+header{
   grid-row: 1;
   display: flex;
   align-items: bottom;
   justify-content: space-between;
-  border-bottom: 2px #a3aacc solid;
+  border-bottom: 2px solid var(--grey);
   color: rgba(0,0,0,0.75);
 }
-.navbar{
+nav{
+  display: flex;
+  justify-content: space-around;
+}
+main{
+  display: flex;
+  justify-content: space-between;
+}
+aside{
+  background: var(--white);
+  border-radius: 1em;
+  margin-left: 2em;
+  padding: 1em;
+}
+#content{
   display: flex;
   justify-content: space-around;
 }
 a {
+  color: var(--darkblue);
   transition: 0.5s;
   text-decoration: none;
 }
 a:hover{
-  border-bottom: 1px solid #a3aacc;
+  border-bottom: 1px solid var(--grey);
 }
-.navbar a{
-  color: rgba(0,0,0,0.65);
+nav a{
+  color: var(--black);
   font-style: normal;
   font-weight:400;
 }
-.navbar ul{
+nav ul{
     display: flex;
 }
-.navbar ul li {
+nav ul li {
     display: block;
     text-decoration: none;
     padding: 1em;
 }
-.navbar ul li ul{
+nav ul li ul{
   display: none;
   position: absolute;
   opacity: 0;
   visibility: hidden;
 }
-.navbar ul li:hover > ul, .navbar ul li ul:hover{
+nav ul li:hover > ul, .navbar ul li ul:hover{
   display: block;
   opacity: 1;
   visibility: visible;  
@@ -86,9 +106,7 @@ h1, h2, h3, table{
   column-span: all;
 }
 p, li, ul {
-  font-family: 'EB Garamond', serif;
   font-style: normal;
-  font-weight:400;
 }
 p {
   text-align: justify;
@@ -97,12 +115,11 @@ li, ul {
   margin-top: 0.5em;
 }
 h1, h2, h3, h4, h5 {
-  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight:500;
 }
 h1 {
-  color: #444444;
+  color: var(--grey);
 }
 pre {
   padding: 1em;

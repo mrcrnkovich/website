@@ -4,21 +4,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
-    </style> 
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheet.css') }}">
     <title>Mike's Portfolio</title>
   </head>
   <body>
     {% block header %}
         {{ header() }}
     {% endblock header %}
-    {% block main %}
-    {% block sidebar %} 
-    {% endblock sidebar %}
-    {% block content %} 
-    {% endblock content %}
-    {% endblock main %}
+    <main>
+        {% block sidebar %} 
+        {% endblock sidebar %}
+        {% block content %} 
+        {% endblock content %}
+    </main>
     {% block footer %}
     {% endblock footer %}
   </body>
