@@ -1,3 +1,5 @@
+{% from "base/components.html" import header %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,6 +11,7 @@
   </head>
   <body>
     {% block header %}
+        {{ header() }}
     {% endblock header %}
     {% block main %}
     {% block sidebar %} 
