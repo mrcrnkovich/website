@@ -18,20 +18,17 @@
 
 body {
   min-height: 95vh;
-  max-width: 960px;
-  /*border: 1px solid var(--grey);
-  box-shadow: 5px 5px 5px #ccc; */
+  max-width: 100%;
   margin: 0 auto;
   display: grid;
   grid-gap: 2em;
   padding: 1em;
   grid-template-rows: 5em auto 2em;
-  border-radius: 5px;
-  background: #fff;
 }
 
 header{
   grid-row: 1;
+  padding-left, padding-right: 1em;
   display: flex;
   align-items: bottom;
   justify-content: space-between;
@@ -43,14 +40,22 @@ nav{
   justify-content: space-around;
 }
 main{
-  display: flex;
-  justify-content: space-between;
+  display: flex; 
+  justify-content: space-around;
+  min-height: 90vh;
+}
+article{
+ padding: 1em;
 }
 aside{
-  background: var(--white);
+  background: #ccc;
   border-radius: 1em;
   margin-left: 2em;
   padding: 1em;
+  padding-right: 2em;
+}
+aside li{
+  color: var(--grey);
 }
 #content{
   display: flex;
