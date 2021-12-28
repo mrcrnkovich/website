@@ -39,7 +39,10 @@ section {
     padding-bottom: 1em;
     padding-left: 2em;
     padding-right: 2em;
+    font-weight: 200;
+    letter-spacing: 0.1rem;
 }
+
 article {
     width: 60em;
 }
@@ -58,6 +61,7 @@ h1, h2, h3 {
 h4, h5 {
     padding-bottom: 0.25rem;
     margin: 0rem;
+    font-weight: 500;
 }
 p {
     margin: 1rem 0;
